@@ -25,6 +25,10 @@ type AnalysisResponse = {
   analysis_source?: 'openai' | 'groq' | 'rule_based';
 };
 
+// Leave this empty in Vercel to use the same deployed domain's /api route.
+// Set VITE_API_BASE_URL only when the API is deployed on a separate domain.
+const apiBaseUrl = (import.meta.env.VITE_API_BASE_URL ?? '').replace(/\/$/, '');
+
 function App() {
   const [resume, setResume] = useState<File | null>(null);
   const [jobDescription, setJobDescription] = useState('');
@@ -69,7 +73,7 @@ function App() {
       formData.append('resume', resume);
       formData.append('job_description', jobDescription.trim());
 
-      const response = await fetch('http://localhost:8000/api/resumes/analyze', {
+      const response = await fetch(`${apiBaseUrl}/api/resumes/analyze`, {
         method: 'POST',
         body: formData,
       });
