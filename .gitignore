@@ -29,3 +29,5 @@ backend/.env
 *.sln
 *.sw?
 .qodo
+
+.vercel
