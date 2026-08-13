@@ -1,54 +1,117 @@
-# React + TypeScript + Vite
+# 🤖 AI Resume Analyzer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> An AI-powered web application that helps job seekers analyze their resumes and improve their chances of matching job opportunities.
 
-Currently, two official plugins are available:
+## 📌 Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**AI Resume Analyzer** is a modern web application designed to analyze resumes against job descriptions. It provides users with useful insights such as resume match scores, relevant skills, missing skills, and improvement suggestions.
 
-## Expanding the ESLint configuration
+The project is built with a clean and responsive interface to make the resume analysis process simple and user-friendly.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## ✨ Features
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+* 📄 Upload and analyze resumes
+* 💼 Add job descriptions
+* 🎯 Resume-to-job matching
+* 📊 Resume match score
+* 🛠️ Skills analysis
+* ⚠️ Identify missing skills
+* 💡 Resume improvement suggestions
+* 📱 Responsive design
+* 🎨 Modern and user-friendly interface
+
+## 🛠️ Tech Stack
+
+| Technology   | Purpose                    |
+| ------------ | -------------------------- |
+| React        | Frontend development       |
+| TypeScript   | Type-safe development      |
+| Vite         | Development and build tool |
+| Tailwind CSS | UI styling                 |
+| AI / NLP     | Resume analysis            |
+
+## 🔄 How It Works
+
+```text
+          Resume
+             ↓
+      Upload Resume
+             ↓
+    Extract Resume Data
+             ↓
+     Enter Job Description
+             ↓
+       AI / NLP Analysis
+             ↓
+    ┌────────┴─────────┐
+    ↓                  ↓
+Match Score       Skills Analysis
+    ↓                  ↓
+    └────────┬─────────┘
+             ↓
+    Improvement Suggestions
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🚀 Getting Started
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### Prerequisites
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+Make sure you have the following installed:
+
+* Node.js
+* npm
+
+### Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/your-username/ai-resume-analyzer.git
 ```
+
+Navigate to the project:
+
+```bash
+cd ai-resume-analyzer
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+Open the local development URL shown in the terminal.
+
+## 📸 Screenshots
+
+Screenshots of the application will be added here.
+
+## 🔮 Future Improvements
+
+* [ ] AI-powered resume analysis
+* [ ] ATS compatibility score
+* [ ] Resume history
+* [ ] Job recommendation system
+* [ ] User authentication
+* [ ] Resume analytics dashboard
+* [ ] PDF report generation
+* [ ] Online deployment
+
+## 👨‍💻 Author
+
+**Sahan Sudeepa Gunawardhana**
+
+Full-Stack Developer
+
+**Tech:** React • TypeScript • JavaScript • Node.js • Python
+
+## 📄 License
+
+This project is developed for educational and portfolio purposes.
